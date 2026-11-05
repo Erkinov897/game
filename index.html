@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Smartlar — telefonlar doʻkoni</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Smart<b>lar</b></div>
+    <div class="right">
+      <a href="#catalog">Telefonlar</a>
+      <button class="cartbtn" id="open">Savat (<span id="cnt">0</span>)</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Yangi telefon. Eng yaxshi narxda.</h1>
+      <p>Apple, Samsung, Xiaomi va boshqa markalarning original telefonlari. Rasmiy kafolat, muddatli toʻlov va Toshkent boʻylab tekin yetkazish.</p>
+      <a class="cta" href="#catalog">Telefonlarni koʻrish</a>
+    </div>
+    <div class="stage">
+      <div id="hero"></div>
+      <div class="sw" id="sw"></div>
+      <div class="cname" id="cname"></div>
+    </div>
+  </section>
+
+  <section id="catalog">
+    <h2>Telefonlar</h2>
+    <div class="bar">
+      <span id="chips" style="display:contents"></span>
+      <span class="sp"></span>
+      <input type="text" id="q" placeholder="Qidirish" aria-label="Qidirish">
+      <select id="s" aria-label="Saralash">
+        <option value="a">Arzonidan</option>
+        <option value="d">Qimmatidan</option>
+      </select>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="perks">
+    <div><h3>Original kafolat</h3><p>Barcha telefonlar rasmiy, 12 oylik kafolat bilan.</p></div>
+    <div><h3>Muddatli toʻlov</h3><p>12 oygacha foizsiz, dastlabki toʻlovsiz.</p></div>
+    <div><h3>Tekin yetkazish</h3><p>Toshkent boʻylab shu kuni yetkazamiz.</p></div>
+  </section>
+
+  <footer>
+    <div>Smartlar, Toshkent shahri</div>
+    <div>+998 90 000 00 00 · Har kuni 9:00–21:00</div>
+  </footer>
+</div>
+
+<div id="ov"></div>
+<aside id="cart" aria-label="Savat">
+  <div class="ctop"><h2>Savat</h2><button class="x" id="close" aria-label="Yopish">×</button></div>
+  <div id="items"></div>
+  <div class="total"><span>Jami</span><span id="sum">0 soʻm</span></div>
+  <button class="buy" id="buy">Buyurtma berish</button>
+  <div id="msg" role="status"></div>
+</aside>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
