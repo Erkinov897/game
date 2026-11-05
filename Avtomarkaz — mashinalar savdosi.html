@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Avtomarkaz — mashinalar savdosi</title>
+<script type="text/javascript" nonce="553fe1c28c3c462c802b8b755e6" src="//local.adguard.org?ts=1793878332371&amp;type=content-script&amp;dmn=433f8b92-beda-402a-82fd-e95636740a20.frame.claudeusercontent.com&amp;pth=%2F_f%2F1793879738-6055%2F_src%2Findex.html%3F__frame_t%3D8nvsLIcZBxnDoXI-4EVi9Wj-.e0f091ee-9f3e-44d8-871e-b86ce3bf1bc0.42c8ba7b-41c2-4f72-80ba-be1d919487b2.1793883363&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="553fe1c28c3c462c802b8b755e6" src="//local.adguard.org?ts=1793878332371&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f4;--surface:#fff;--ink:#0e1a2b;--muted:#5d6b7e;--acc:#e4572e;--acc-ink:#fff;--line:#d8dee6;--tile:#dfe5ec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b121c;--surface:#131d2b;--ink:#eef2f7;--muted:#98a6ba;--acc:#ff7a52;--acc-ink:#1a0c06;--line:#243247;--tile:#1b2a40;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b121c;--surface:#131d2b;--ink:#eef2f7;--muted:#98a6ba;--acc:#ff7a52;--acc-ink:#1a0c06;--line:#243247;--tile:#1b2a40;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Sora',system-ui,Arial,sans-serif;line-height:1.5}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;font-size:1.4rem;letter-spacing:-.03em}
+.logo i{font-style:normal;color:var(--acc)}
+nav a{color:var(--ink);text-decoration:none;margin-left:20px;font-size:.95rem}
+.tel{background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-weight:600;font-size:.9rem}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.hero{padding:44px 0 36px}
+h1{font-size:clamp(2.3rem,6.2vw,4.6rem);line-height:1;letter-spacing:-.04em;margin:0 0 16px;font-weight:800;max-width:15ch}
+.hero p{color:var(--muted);max-width:52ch;margin:0 0 28px;font-size:1.05rem}
+.stats{display:flex;gap:32px;flex-wrap:wrap}
+.stats b{display:block;font-size:1.6rem;letter-spacing:-.02em}
+.stats span{color:var(--muted);font-size:.9rem}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:22px}
+label{display:flex;flex-direction:column;gap:6px;font-size:.82rem;color:var(--muted)}
+select,input[type=text]{font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+input[type=range]{accent-color:var(--acc);width:100%}
+.res{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-align:left;padding:0;color:var(--ink);font:inherit}
+.card:hover{border-color:var(--acc)}
+.pic{height:140px;display:grid;place-items:center;position:relative;background:linear-gradient(var(--tile),var(--bg))}
+.tag{position:absolute;top:12px;left:12px;background:var(--surface);color:var(--ink);border-radius:999px;padding:3px 11px;font-size:.75rem;font-weight:600}
+.info{padding:14px 16px 16px}
+.info h3{margin:0;font-size:1.05rem}
+.info small{color:var(--muted)}
+.price{font-weight:800;font-size:1.25rem;margin-top:8px;letter-spacing:-.02em}
+.empty{padding:40px;text-align:center;color:var(--muted);grid-column:1/-1}
+.why{margin:64px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.why div{background:var(--ink);color:var(--bg);border-radius:18px;padding:24px}
+.why h3{margin:0 0 6px}
+.why p{margin:0;opacity:.8;font-size:.95rem}
+footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+#md{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;z-index:30;align-items:center;justify-content:center;padding:16px}
+#md.on{display:flex}
+.box{background:var(--surface);border-radius:22px;max-width:520px;width:100%;max-height:92vh;overflow:auto;position:relative}
+.box .pic{height:180px;font-size:5.5rem}
+.body{padding:20px 22px 24px}
+.body h2{margin:0;letter-spacing:-.02em}
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.spec div{background:var(--bg);border-radius:12px;padding:10px 12px}
+.spec small{display:block;color:var(--muted)}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{flex:1;text-align:center;background:var(--acc);color:var(--acc-ink);border-radius:12px;padding:13px;font-weight:700;text-decoration:none;border:0;font:inherit;font-weight:700;cursor:pointer}
+.btn.g{background:var(--bg);color:var(--ink);border:1px solid var(--line)}
+.x{position:absolute;top:10px;right:12px;width:36px;height:36px;border-radius:50%;border:0;background:var(--surface);color:var(--ink);font-size:1.4rem;cursor:pointer}
+#cr{margin:14px 0 0;padding:12px;background:var(--bg);border-radius:12px;font-size:.92rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="logo">Avto<i>markaz</i></div>
+<nav><a href="#cars">Mashinalar</a><a href="#why">Afzalliklar</a><a class="tel" href="tel:+998900000000">+998 90 000 00 00</a></nav>
+</header>
+
+<section class="hero">
+<h1>Orzuingizdagi mashinani toping.</h1>
+<p>Yangi va yurgan avtomobillar bir joyda: Chevrolet, BYD, Kia, Toyota, Mercedes va boshqalar. Narxi ochiq, hujjatlari tekshirilgan, kredit va almashtirish mavjud.</p>
+<div class="stats"><div><b id="n1">0</b><span>avtomobil</span></div><div><b>24 oy</b><span>muddatli toʻlov</span></div><div><b>7 kun</b><span>qaytarib olish kafolati</span></div></div>
+</section>
+
+<section id="cars">
+<div class="panel">
+<label>Qidiruv<input type="text" id="q" placeholder="Model nomi"></label>
+<label>Marka<select id="b"></select></label>
+<label>Kuzov<select id="t"></select></label>
+<label>Yoqilgʻi<select id="f"></select></label>
+<label>Narx: <span id="pl"></span><input type="range" id="p" min="5000" max="80000" step="1000" value="80000"></label>
+<label>Saralash<select id="s"><option value="a">Arzonidan</option><option value="d">Qimmatidan</option><option value="y">Yangisidan</option></select></label>
+</div>
+<div class="res"><span id="rc"></span></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section class="why" id="why">
+<div><h3>Tekshirilgan avtomobillar</h3><p>Har bir mashina texnik ko‘rikdan va hujjatlar tekshiruvidan o‘tadi.</p></div>
+<div><h3>Kredit va lizing</h3><p>Dastlabki toʻlov 20% dan. Javob 1 soat ichida.</p></div>
+<div><h3>Almashtirish (trade-in)</h3><p>Eski mashinangizni baholab, yangisiga almashtirib beramiz.</p></div>
+</section>
+
+<footer><div>Avtomarkaz, Toshkent shahri</div><div>Har kuni 9:00–20:00 · Telegram: @avtomarkaz</div></footer>
+</div>
+
+<div id="md" role="dialog" aria-modal="true"><div class="box" id="box"></div></div>
+
+<script>
+var C=[
+{n:"Chevrolet Gentra",b:"Chevrolet",t:"Sedan",y:2023,p:14500,f:"Benzin",g:"Avtomat",k:0,c:"#9aa5b1",e:"🚗"},
+{n:"Chevrolet Cobalt",b:"Chevrolet",t:"Sedan",y:2022,p:12800,f:"Benzin",g:"Mexanik",k:18000,c:"#c9d1da",e:"🚗"},
+{n:"Chevrolet Onix",b:"Chevrolet",t:"Sedan",y:2024,p:16500,f:"Benzin",g:"Avtomat",k:0,c:"#b73a3a",e:"🚗"},
+{n:"Chevrolet Tracker",b:"Chevrolet",t:"SUV",y:2024,p:21500,f:"Benzin",g:"Avtomat",k:0,c:"#2f4f8f",e:"🚙"},
+{n:"Chevrolet Malibu 2",b:"Chevrolet",t:"Sedan",y:2023,p:27500,f:"Benzin",g:"Avtomat",k:9000,c:"#222b38",e:"🚘"},
+{n:"Chevrolet Damas",b:"Chevrolet",t:"Miniven",y:2021,p:8200,f:"Gaz",g:"Mexanik",k:45000,c:"#e8ecef",e:"🚐"},
+{n:"BYD Song Plus",b:"BYD",t:"SUV",y:2024,p:31500,f:"Gibrid",g:"Avtomat",k:0,c:"#3b7a57",e:"🚙"},
+{n:"BYD Chazor",b:"BYD",t:"Sedan",y:2023,p:29500,f:"Gibrid",g:"Avtomat",k:6000,c:"#8a9aa8",e:"🚘"},
+{n:"BYD Han EV",b:"BYD",t:"Sedan",y:2024,p:42000,f:"Elektr",g:"Avtomat",k:0,c:"#1c2733",e:"⚡"},
+{n:"Kia K5",b:"Kia",t:"Sedan",y:2022,p:26500,f:"Benzin",g:"Avtomat",k:28000,c:"#a8b3bf",e:"🚘"},
+{n:"Kia Sportage",b:"Kia",t:"SUV",y:2023,p:33500,f:"Benzin",g:"Avtomat",k:12000,c:"#5b6b3c",e:"🚙"},
+{n:"Hyundai Tucson",b:"Hyundai",t:"SUV",y:2023,p:35500,f:"Benzin",g:"Avtomat",k:15000,c:"#d9dde2",e:"🚙"},
+{n:"Hyundai Sonata",b:"Hyundai",t:"Sedan",y:2021,p:23500,f:"Gaz",g:"Avtomat",k:52000,c:"#31405a",e:"🚘"},
+{n:"Toyota Camry",b:"Toyota",t:"Sedan",y:2022,p:36500,f:"Benzin",g:"Avtomat",k:30000,c:"#1d2430",e:"🚘"},
+{n:"Toyota Land Cruiser Prado",b:"Toyota",t:"SUV",y:2021,p:58000,f:"Benzin",g:"Avtomat",k:60000,c:"#e5e7ea",e:"🚙"},
+{n:"Mercedes-Benz C-Class",b:"Mercedes-Benz",t:"Sedan",y:2020,p:39500,f:"Benzin",g:"Avtomat",k:70000,c:"#5f6b78",e:"🏎️"},
+{n:"BMW 5 Series",b:"BMW",t:"Sedan",y:2021,p:48500,f:"Benzin",g:"Avtomat",k:55000,c:"#27406e",e:"🏎️"},
+{n:"Tesla Model 3",b:"Tesla",t:"Sedan",y:2022,p:38500,f:"Elektr",g:"Avtomat",k:25000,c:"#b03030",e:"⚡"},
+{n:"Lada Granta",b:"Lada",t:"Sedan",y:2021,p:7800,f:"Benzin",g:"Mexanik",k:50000,c:"#c4c9cf",e:"🚗"},
+{n:"Isuzu NPR yuk mashinasi",b:"Isuzu",t:"Yuk",y:2022,p:32000,f:"Dizel",g:"Mexanik",k:40000,c:"#e6e8ea",e:"🚚"}];
+var $=function(i){return document.getElementById(i)};
+var usd=function(n){return "$"+n.toLocaleString("ru-RU")};
+function opts(id,key,all){var v=[all].concat(C.map(function(x){return x[key]}).filter(function(x,i,a){return a.indexOf(x)===i}).sort());$(id).innerHTML=v.map(function(x){return "<option>"+x+"</option>"}).join("")}
+opts("b","b","Barchasi");opts("t","t","Barchasi");opts("f","f","Barchasi");
+function svg(x){
+ var B={
+  Sedan:["M8 70V58Q8 52 20 50L58 44L80 24H152Q166 24 176 40L200 48Q232 52 232 62V70Z","66,43 84,28 112,28 112,43|118,28 150,28 164,43 118,43"],
+  SUV:["M8 70V56Q8 50 18 48L52 42L68 20H196Q206 20 212 34L224 40Q234 44 234 54V70Z","58,40 72,24 110,24 110,40|116,24 160,24 160,40 116,40|166,24 194,24 202,40 166,40"],
+  Miniven:["M8 70V30Q8 22 16 22H166Q174 22 180 32L214 46Q232 52 232 62V70Z","20,30 76,30 76,46 20,46|82,30 160,30 160,46 82,46|170,30 178,30 204,44 170,44"],
+  Yuk:["M8 70V22H140V70Z M144 70V36Q144 30 150 28L184 22Q194 22 200 34L220 44Q232 48 232 58V70Z","152,30 182,27 196,42 152,42"]
+ };
+ var b=B[x.t]||B.Sedan;
+ var w=b[1].split("|").map(function(p){return '<polygon points="'+p+'" fill="#1c2a3b" opacity=".88"/>'}).join("");
+ var wh=[58,188].map(function(cx){return '<circle cx="'+cx+'" cy="72" r="17" fill="#10151c"/><circle cx="'+cx+'" cy="72" r="9" fill="#c3cbd5"/><circle cx="'+cx+'" cy="72" r="3" fill="#10151c"/>'}).join("");
+ return '<svg viewBox="0 0 240 96" style="width:88%;max-height:100%" role="img" aria-label="'+x.n+'"><ellipse cx="120" cy="89" rx="108" ry="5" fill="rgba(0,0,0,.22)"/><path d="'+b[0]+'" fill="'+x.c+'" stroke="rgba(0,0,0,.4)" stroke-width="1.5"/>'+w+'<rect x="224" y="54" width="9" height="5" rx="2" fill="#ffe08a"/><rect x="7" y="55" width="4" height="7" rx="1" fill="#d63a3a"/>'+wh+'</svg>';
+}
+function show(){
+ var q=$("q").value.toLowerCase(),b=$("b").value,t=$("t").value,f=$("f").value,p=+$("p").value,s=$("s").value;
+ $("pl").textContent=p>=80000?"cheklovsiz":usd(p)+" gacha";
+ var r=C.map(function(x,i){x.i=i;return x}).filter(function(x){return (!q||x.n.toLowerCase().indexOf(q)>-1)&&(b==="Barchasi"||x.b===b)&&(t==="Barchasi"||x.t===t)&&(f==="Barchasi"||x.f===f)&&(p>=80000||x.p<=p)});
+ r.sort(function(a,c){return s==="a"?a.p-c.p:s==="d"?c.p-a.p:c.y-a.y});
+ $("rc").textContent=r.length+" ta avtomobil topildi";
+ $("grid").innerHTML=r.length?r.map(function(x){return '<button class="card" data-i="'+x.i+'"><div class="pic"><span class="tag">'+(x.k?x.k.toLocaleString("ru-RU")+" km":"Yangi")+'</span>'+svg(x)+'</div><div class="info"><h3>'+x.n+'</h3><small>'+x.y+' · '+x.f+' · '+x.g+'</small><div class="price">'+usd(x.p)+'</div></div></button>'}).join(""):'<div class="empty">Hech narsa topilmadi. Filtrlarni oʻzgartirib koʻring.</div>';
+}
+["q","b","t","f","p","s"].forEach(function(i){$(i).addEventListener("input",show)});
+$("grid").addEventListener("click",function(e){
+ var c=e.target.closest(".card");if(!c)return;
+ var x=C[c.dataset.i],dp=Math.round(x.p*0.2),mo=Math.round((x.p-dp)/24);
+ $("box").innerHTML='<button class="x" id="cl" aria-label="Yopish">×</button><div class="pic">'+svg(x)+'</div><div class="body"><h2>'+x.n+'</h2><div class="price">'+usd(x.p)+'</div><div class="spec"><div><small>Yili</small>'+x.y+'</div><div><small>Yurgani</small>'+(x.k?x.k.toLocaleString("ru-RU")+" km":"Yangi")+'</div><div><small>Yoqilgʻi</small>'+x.f+'</div><div><small>Uzatma</small>'+x.g+'</div><div><small>Kuzov</small>'+x.t+'</div><div><small>Marka</small>'+x.b+'</div></div><div class="btns"><a class="btn" href="tel:+998900000000">Qoʻngʻiroq qilish</a><a class="btn g" href="https://t.me/avtomarkaz">Telegram</a></div><div id="cr">Kredit: dastlabki toʻlov '+usd(dp)+' (20%), oyiga taxminan '+usd(mo)+' (24 oy, foizsiz hisob).</div></div>';
+ $("md").classList.add("on");$("cl").focus();
+});
+function closeM(){$("md").classList.remove("on")}
+$("md").addEventListener("click",function(e){if(e.target===$("md")||e.target.id==="cl")closeM()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeM()});
+$("n1").textContent=C.length;
+show();
+</script>
+</body>
+</html>
