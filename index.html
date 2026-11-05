@@ -3,69 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Smartlar — telefonlar doʻkoni</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<title>Bilim — oʻquv markazi</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="logo">Smart<b>lar</b></div>
-    <div class="right">
-      <a href="#catalog">Telefonlar</a>
-      <button class="cartbtn" id="open">Savat (<span id="cnt">0</span>)</button>
-    </div>
+    <div class="logo">Bilim<b>.</b></div>
+    <nav>
+      <a href="#courses">Kurslar</a>
+      <a href="#teachers">Ustozlar</a>
+      <a href="#faq">Savollar</a>
+      <a class="btn sm" href="#join">Yozilish</a>
+    </nav>
   </header>
 
   <section class="hero">
     <div>
-      <h1>Yangi telefon. Eng yaxshi narxda.</h1>
-      <p>Apple, Samsung, Xiaomi va boshqa markalarning original telefonlari. Rasmiy kafolat, muddatli toʻlov va Toshkent boʻylab tekin yetkazish.</p>
-      <a class="cta" href="#catalog">Telefonlarni koʻrish</a>
+      <h1>Bilim — kelajak sari birinchi qadam.</h1>
+      <p>Til, fan va IT yoʻnalishlarida tajribali ustozlar bilan kichik guruhlarda oʻqing. Birinchi dars — bepul.</p>
+      <a class="btn" href="#join">Bepul darsga yozilish</a>
     </div>
-    <div class="stage">
-      <div id="hero"></div>
-      <div class="sw" id="sw"></div>
-      <div class="cname" id="cname"></div>
+    <div class="today" aria-label="Bugungi darslar">
+      <h3>Bugungi darslar</h3>
+      <ul>
+        <li><time>09:00</time><span>Ingliz tili · B1</span><i>12 oʻrin</i></li>
+        <li><time>11:00</time><span>Python · boshlangʻich</span><i>5 oʻrin</i></li>
+        <li><time>14:00</time><span>IELTS · Writing</span><i>3 oʻrin</i></li>
+        <li><time>17:30</time><span>Matematika · abituriyent</span><i>8 oʻrin</i></li>
+      </ul>
     </div>
   </section>
 
-  <section id="catalog">
-    <h2>Telefonlar</h2>
-    <div class="bar">
-      <span id="chips" style="display:contents"></span>
-      <span class="sp"></span>
-      <input type="text" id="q" placeholder="Qidirish" aria-label="Qidirish">
-      <select id="s" aria-label="Saralash">
-        <option value="a">Arzonidan</option>
-        <option value="d">Qimmatidan</option>
-      </select>
-    </div>
+  <section class="stats">
+    <div><b data-n="1200">0</b><span>bitiruvchi</span></div>
+    <div><b data-n="15">0</b><span>tajribali ustoz</span></div>
+    <div><b data-n="8">0</b><span>yoʻnalish</span></div>
+    <div><b data-n="12">0</b><span>nafargacha guruh</span></div>
+  </section>
+
+  <section id="courses">
+    <h2>Kurslar</h2>
+    <div class="bar" id="chips"></div>
     <div class="grid" id="grid"></div>
   </section>
 
-  <section class="perks">
-    <div><h3>Original kafolat</h3><p>Barcha telefonlar rasmiy, 12 oylik kafolat bilan.</p></div>
-    <div><h3>Muddatli toʻlov</h3><p>12 oygacha foizsiz, dastlabki toʻlovsiz.</p></div>
-    <div><h3>Tekin yetkazish</h3><p>Toshkent boʻylab shu kuni yetkazamiz.</p></div>
+  <section id="teachers">
+    <h2>Ustozlar</h2>
+    <div class="grid t" id="tgrid"></div>
+  </section>
+
+  <section id="join" class="join">
+    <div>
+      <h2>Bepul sinov darsiga yoziling</h2>
+      <p>Raqamingizni qoldiring, administrator 1 soat ichida qoʻngʻiroq qilib, qulay vaqtni kelishadi.</p>
+    </div>
+    <form id="f" novalidate>
+      <label>Ismingiz<input id="nm" type="text" autocomplete="name" placeholder="Masalan, Aziza"></label>
+      <label>Telefon<input id="ph" type="tel" autocomplete="tel" placeholder="+998 90 123 45 67"></label>
+      <label>Kurs<select id="cs"></select></label>
+      <button class="btn" type="submit">Yozilish</button>
+      <div id="fm" role="status"></div>
+    </form>
+  </section>
+
+  <section id="faq">
+    <h2>Koʻp beriladigan savollar</h2>
+    <details><summary>Birinchi dars rostdan ham bepulmi?</summary><p>Ha. Sinov darsiga kelib, ustoz va guruhni koʻrasiz. Yoqmasa, hech narsa toʻlamaysiz.</p></details>
+    <details><summary>Guruhda nechta oʻquvchi boʻladi?</summary><p>Eng koʻpi bilan 12 nafar, shunda ustoz har biringizga vaqt ajrata oladi.</p></details>
+    <details><summary>Toʻlovni boʻlib toʻlasa boʻladimi?</summary><p>Ha, har oy boshida toʻlanadi. Ikki yoʻnalishga birga yozilsangiz, 10% chegirma beramiz.</p></details>
   </section>
 
   <footer>
-    <div>Smartlar, Toshkent shahri</div>
-    <div>+998 90 000 00 00 · Har kuni 9:00–21:00</div>
+    <div>Bilim oʻquv markazi, Toshkent shahri</div>
+    <div>+998 90 000 00 00 · Du–Sha 9:00–20:00</div>
   </footer>
 </div>
-
-<div id="ov"></div>
-<aside id="cart" aria-label="Savat">
-  <div class="ctop"><h2>Savat</h2><button class="x" id="close" aria-label="Yopish">×</button></div>
-  <div id="items"></div>
-  <div class="total"><span>Jami</span><span id="sum">0 soʻm</span></div>
-  <button class="buy" id="buy">Buyurtma berish</button>
-  <div id="msg" role="status"></div>
-</aside>
-<div id="toast" role="status"></div>
-
 <script src="script.js"></script>
 </body>
 </html>
