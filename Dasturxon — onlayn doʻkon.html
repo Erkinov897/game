@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dasturxon — Oʻzbek mahsulotlari doʻkoni</title>
+<script type="text/javascript" nonce="553fe1c28c3c462c802b8b755e6" src="//local.adguard.org?ts=1793878332371&amp;type=content-script&amp;dmn=b69e2a9e-00d8-49bb-bb3c-251139665e58.frame.claudeusercontent.com&amp;pth=%2F_f%2F1793879026-1157%2F_src%2Findex.html%3F__frame_t%3Dvf1h_mSfR2SYp-hYsvcgtt0r.e0f091ee-9f3e-44d8-871e-b86ce3bf1bc0.42c8ba7b-41c2-4f72-80ba-be1d919487b2.1793882656&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="553fe1c28c3c462c802b8b755e6" src="//local.adguard.org?ts=1793878332371&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f9fc;--surface:#fff;--ink:#14213d;--muted:#5b6784;--blue:#1d4ed8;--blue-d:#1e3a8a;--gold:#f2b134;--line:#dbe2ef;--tile:#e6edfb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1426;--surface:#141d36;--ink:#eef2fb;--muted:#9aa7c7;--blue:#6b95ff;--blue-d:#9db8ff;--line:#26324f;--tile:#1b2750;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1426;--surface:#141d36;--ink:#eef2fb;--muted:#9aa7c7;--blue:#6b95ff;--blue-d:#9db8ff;--line:#26324f;--tile:#1b2750;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Bricolage Grotesque',system-ui,Arial,sans-serif;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;font-size:1.5rem;letter-spacing:-.02em;color:var(--blue-d)}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.cartbtn{background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:10px 18px;font-weight:600}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;padding:40px 0 56px}
+h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1;letter-spacing:-.035em;margin:0 0 18px;font-weight:800}
+.hero p{color:var(--muted);font-size:1.1rem;max-width:46ch;margin:0 0 24px}
+.cta{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;border-radius:12px;padding:14px 26px;font-weight:600}
+.art{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 50%,var(--surface) 0 28%,var(--gold) 28% 34%,var(--blue) 34% 56%,var(--surface) 56% 60%,var(--blue-d) 60% 78%,var(--tile) 78%);display:grid;place-items:center;font-size:5rem;max-width:380px;justify-self:center;width:100%}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.chip{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 18px}
+.chip[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:#fff}
+h2{font-size:1.8rem;margin:0 0 16px;letter-spacing:-.02em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.pic{background:var(--tile);height:150px;display:grid;place-items:center;font-size:3.6rem}
+.info{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.info h3{margin:0;font-size:1.05rem}
+.info small{color:var(--muted)}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:10px}
+.price{font-weight:800}
+.add{background:var(--ink);color:var(--bg);border:0;border-radius:10px;padding:8px 14px;font-weight:600}
+.about{margin:64px 0;padding:32px;border-radius:20px;background:var(--blue-d);color:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.about h3{margin:0 0 6px;color:var(--gold)}
+.about p{margin:0;opacity:.9}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+#ov{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;z-index:20}
+#ov.on{display:block}
+aside{position:fixed;top:0;right:0;bottom:0;width:min(380px,100%);background:var(--surface);z-index:30;transform:translateX(100%);transition:transform .25s;padding:calc(20px + env(safe-area-inset-top,0px)) 20px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column}
+aside.on{transform:none}
+.ctop{display:flex;justify-content:space-between;align-items:center}
+.ctop h2{margin:0}
+.x{background:none;border:0;color:var(--ink);font-size:1.6rem}
+#items{flex:1;overflow:auto;margin:14px 0}
+.it{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}
+.qty button{width:28px;height:28px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.total{display:flex;justify-content:space-between;font-weight:800;font-size:1.2rem;margin-bottom:12px}
+.buy{width:100%;background:var(--blue);color:#fff;border:0;border-radius:12px;padding:14px;font-weight:600}
+#msg{color:var(--blue-d);margin-top:10px;min-height:1.4em}
+@media(max-width:720px){.hero{grid-template-columns:1fr;padding-top:16px}.art{max-width:240px;order:-1}}
+@media(prefers-reduced-motion:reduce){aside{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">Dasturxon</div><button class="cartbtn" id="open">Savat (<span id="cnt">0</span>)</button></header>
+
+<section class="hero">
+<div>
+<h1>Oʻzbekiston ta’mi va hunari — uyingizga.</h1>
+<p>Choy, quruq mevalar, asal va qoʻlda yasalgan sopol buyumlar. Toshkent boʻylab 1 kunda yetkazib beramiz.</p>
+<a class="cta" href="#catalog">Mahsulotlarni koʻrish</a>
+</div>
+<div class="art" aria-hidden="true">🍵</div>
+</section>
+
+<section id="catalog">
+<h2>Mahsulotlar</h2>
+<div class="bar" id="filters"></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section class="about">
+<div><h3>Tez yetkazish</h3><p>Toshkent boʻylab buyurtma kuni yoki ertasi kuni.</p></div>
+<div><h3>Toʻgʻridan-toʻgʻri fermerdan</h3><p>Mevalar va asal ishonchli ishlab chiqaruvchilardan.</p></div>
+<div><h3>Naqd yoki karta</h3><p>Olganingizda toʻlaysiz — oldindan toʻlov shart emas.</p></div>
+</section>
+
+<footer>
+<div>Dasturxon doʻkoni, Toshkent</div>
+<div>Telefon: +998 90 000 00 00 · Telegram: @dasturxon</div>
+</footer>
+</div>
+
+<div id="ov"></div>
+<aside id="cart" aria-label="Savat">
+<div class="ctop"><h2>Savat</h2><button class="x" id="close" aria-label="Yopish">×</button></div>
+<div id="items"></div>
+<div class="total"><span>Jami</span><span id="sum">0 soʻm</span></div>
+<button class="buy" id="buy">Buyurtma berish</button>
+<div id="msg" role="status"></div>
+</aside>
+
+<script>
+var P=[
+{id:1,n:"Qora choy",d:"100 g, Gurjiston navi",p:25000,c:"Oziq-ovqat",e:"🍵"},
+{id:2,n:"Yashil choy",d:"100 g, jasminli",p:28000,c:"Oziq-ovqat",e:"🌿"},
+{id:3,n:"Quritilgan oʻrik",d:"500 g, urugʻsiz",p:60000,c:"Oziq-ovqat",e:"🍑"},
+{id:4,n:"Yongʻoq",d:"500 g, tozalangan",p:85000,c:"Oziq-ovqat",e:"🥜"},
+{id:5,n:"Tog‘ asali",d:"500 g, tabiiy",p:95000,c:"Oziq-ovqat",e:"🍯"},
+{id:6,n:"Rishton piyola",d:"Qoʻlda boʻyalgan",p:70000,c:"Hunarmandchilik",e:"🏺"},
+{id:7,n:"Lagan",d:"Sopol, 30 sm",p:180000,c:"Hunarmandchilik",e:"🍽️"},
+{id:8,n:"Ikat sharf",d:"Ipak aralash",p:150000,c:"Hunarmandchilik",e:"🧣"}];
+var cart={},cat="Barchasi";
+var $=function(i){return document.getElementById(i)};
+var f=function(n){return n.toLocaleString("ru-RU")+" soʻm"};
+function renderFilters(){
+ var cs=["Barchasi","Oziq-ovqat","Hunarmandchilik"];
+ $("filters").innerHTML=cs.map(function(c){return '<button class="chip" aria-pressed="'+(c===cat)+'" data-c="'+c+'">'+c+'</button>'}).join("");
+}
+function renderGrid(){
+ $("grid").innerHTML=P.filter(function(x){return cat==="Barchasi"||x.c===cat}).map(function(x){
+  return '<article class="card"><div class="pic" aria-hidden="true">'+x.e+'</div><div class="info"><h3>'+x.n+'</h3><small>'+x.d+'</small><div class="row"><span class="price">'+f(x.p)+'</span><button class="add" data-a="'+x.id+'">Savatga</button></div></div></article>';
+ }).join("");
+}
+function renderCart(){
+ var t=0,k=0,h="";
+ P.forEach(function(x){var q=cart[x.id];if(q){t+=q*x.p;k+=q;
+  h+='<div class="it"><div><strong>'+x.n+'</strong><br><small>'+f(x.p*q)+'</small></div><div class="qty"><button data-m="'+x.id+'" aria-label="Kamaytirish">−</button> '+q+' <button data-a="'+x.id+'" aria-label="Koʻpaytirish">+</button></div></div>'}});
+ $("items").innerHTML=h||'<p>Savat boʻsh. Mahsulot qoʻshing.</p>';
+ $("sum").textContent=f(t);$("cnt").textContent=k;
+}
+function toggle(on){$("cart").classList.toggle("on",on);$("ov").classList.toggle("on",on)}
+document.addEventListener("click",function(e){
+ var t=e.target;
+ if(t.dataset.c){cat=t.dataset.c;renderFilters();renderGrid()}
+ if(t.dataset.a){cart[t.dataset.a]=(cart[t.dataset.a]||0)+1;$("msg").textContent="";renderCart()}
+ if(t.dataset.m){var i=t.dataset.m;cart[i]--;if(!cart[i])delete cart[i];renderCart()}
+});
+$("open").onclick=function(){toggle(true)};
+$("close").onclick=$("ov").onclick=function(){toggle(false)};
+$("buy").onclick=function(){
+ if(!Object.keys(cart).length){$("msg").textContent="Avval mahsulot qoʻshing.";return}
+ cart={};renderCart();$("msg").textContent="Buyurtma qabul qilindi. Tez orada qoʻngʻiroq qilamiz.";
+};
+renderFilters();renderGrid();renderCart();
+</script>
+</body>
+</html>
