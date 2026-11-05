@@ -1,85 +1,122 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bilim — oʻquv markazi</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>GOLDEN ARENA — Gaming Hub</title>
+  <script type="text/javascript" nonce="553fe1c28c3c462c802b8b755e6" src="//local.adguard.org?ts=1793878332371&amp;type=content-script&amp;dmn=chatgpt.com&amp;pth=%2Fbackend-api%2Festuary%2Fcontent%3Fid%3Dfile_000000001dfc8210a4137e4cff88ac04%26fn%3Dindex%25281%2529.html%26cd%3Dattachment%26ts%3D498300%26p%3Dfs%26cid%3D1%26sig%3D95f39667f9fbf3a2fb692967d6a7d78ebf1f84d05fde70e4de0b93eebe26c557%26v%3D0&amp;app=chrome.exe&amp;css=2&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="553fe1c28c3c462c802b8b755e6" src="//local.adguard.org?ts=1793878332371&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="logo">Bilim<b>.</b></div>
-    <nav>
-      <a href="#courses">Kurslar</a>
-      <a href="#teachers">Ustozlar</a>
-      <a href="#faq">Savollar</a>
-      <a class="btn sm" href="#join">Yozilish</a>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Golden Arena bosh sahifa"><span class="brand-mark">G</span><span>GOLDEN<span class="gold"> ARENA</span></span></a>
+    <nav class="desktop-nav">
+      <a class="nav-link active" href="#home">Bosh sahifa</a>
+      <a class="nav-link" href="#games">O‘yinlar</a>
+      <a class="nav-link" href="#features">Imkoniyatlar</a>
+      <a class="nav-link" href="#community">Hamjamiyat</a>
     </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Qidiruv"><span>⌕</span></button>
+      <button class="profile-btn" id="profileBtn">Kirish <span>↗</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menyuni ochish"><i></i><i></i><i></i></button>
+    </div>
   </header>
 
-  <section class="hero">
-    <div>
-      <h1>Bilim — kelajak sari birinchi qadam.</h1>
-      <p>Til, fan va IT yoʻnalishlarida tajribali ustozlar bilan kichik guruhlarda oʻqing. Birinchi dars — bepul.</p>
-      <a class="btn" href="#join">Bepul darsga yozilish</a>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YANGI AVLOD GAMING PLATFORMASI</div>
+        <h1>O‘YINLAR<br>OLAMIGA <span class="gold">KIR.</span></h1>
+        <p class="hero-text">Sevimli o‘yinlaringni kashf et. Yangi sarguzashtlarni boshlash vaqti keldi.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-gold" href="#games">O‘yinlarni ko‘rish <span>↗</span></a>
+          <button class="btn btn-outline" id="trailerBtn"><span class="play-icon">▶</span> Platforma haqida</button>
+        </div>
+        <div class="hero-stats">
+          <div><strong>120<span>+</span></strong><small>O‘YINLAR</small></div>
+          <div><strong>24<span>/7</span></strong><small>GAMING MUHIT</small></div>
+          <div><strong>15K<span>+</span></strong><small>O‘YINCHILAR</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="hero-orb"><div class="orb-core">GA</div></div>
+        <div class="floating-tag tag-top"><span class="tag-dot"></span> NEXT LEVEL EXPERIENCE</div>
+        <div class="floating-tag tag-bottom"><span>✦</span> PLAY YOUR WAY</div>
+        <div class="art-caption">EST. 2026 <span>•</span> LEVEL UP</div>
+      </div>
+      <div class="hero-bottom-line"><span>SCROLL TO EXPLORE</span><span class="line"></span><span>01 / 04</span></div>
+    </section>
+
+    <section class="games-section section-wrap" id="games">
+      <div class="section-heading">
+        <div><div class="eyebrow">SENING KEYINGI SARGUZASHTING</div><h2>MASHHUR <span class="gold">O‘YINLAR</span></h2></div>
+        <a class="text-link" href="#all-games">Barchasini ko‘rish <span>↗</span></a>
+      </div>
+      <div class="game-toolbar" id="all-games">
+        <div class="filter-tabs" role="group" aria-label="O‘yin janri">
+          <button class="filter-btn selected" data-filter="all">Barchasi</button>
+          <button class="filter-btn" data-filter="action">Action</button>
+          <button class="filter-btn" data-filter="adventure">Sarguzasht</button>
+          <button class="filter-btn" data-filter="racing">Poyga</button>
+          <button class="filter-btn" data-filter="strategy">Strategiya</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="O‘yin qidirish..."></label>
+      </div>
+      <div class="game-grid" id="gameGrid">
+        <article class="game-card" data-title="Cyber Drift" data-genre="racing" data-category="racing" data-price="Bepul">
+          <div class="game-cover cover-cyber"><div class="cover-shape"></div><span class="cover-label">RACING / 2077</span><span class="cover-title">CYBER<br>DRIFT</span><span class="cover-symbol">◈</span></div>
+          <div class="game-info"><div><h3>Cyber Drift</h3><p>Poyga · Futuristik</p></div><span class="price free">BEPUL</span></div>
+          <button class="card-action" data-game="Cyber Drift">Batafsil <span>↗</span></button>
+        </article>
+        <article class="game-card" data-title="Shadow Protocol" data-genre="action" data-category="action" data-price="$19.99">
+          <div class="game-cover cover-shadow"><div class="shadow-moon"></div><span class="cover-label">STEALTH / ACTION</span><span class="cover-title">SHADOW<br>PROTOCOL</span><span class="cover-symbol">◉</span></div>
+          <div class="game-info"><div><h3>Shadow Protocol</h3><p>Action · Sarguzasht</p></div><span class="price">$19.99</span></div>
+          <button class="card-action" data-game="Shadow Protocol">Batafsil <span>↗</span></button>
+        </article>
+        <article class="game-card" data-title="Kingdom Rise" data-genre="strategy" data-category="strategy" data-price="$14.50">
+          <div class="game-cover cover-kingdom"><div class="kingdom-sun"></div><span class="cover-label">STRATEGY / FANTASY</span><span class="cover-title">KINGDOM<br>RISE</span><span class="cover-symbol">♜</span></div>
+          <div class="game-info"><div><h3>Kingdom Rise</h3><p>Strategiya · Fantasy</p></div><span class="price">$14.50</span></div>
+          <button class="card-action" data-game="Kingdom Rise">Batafsil <span>↗</span></button>
+        </article>
+        <article class="game-card" data-title="Last Horizon" data-genre="adventure" data-category="adventure" data-price="$24.00">
+          <div class="game-cover cover-horizon"><div class="horizon-sun"></div><span class="cover-label">OPEN WORLD / RPG</span><span class="cover-title">LAST<br>HORIZON</span><span class="cover-symbol">✧</span></div>
+          <div class="game-info"><div><h3>Last Horizon</h3><p>RPG · Ochiq dunyo</p></div><span class="price">$24.00</span></div>
+          <button class="card-action" data-game="Last Horizon">Batafsil <span>↗</span></button>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Bu qidiruv bo‘yicha o‘yin topilmadi.</p>
+    </section>
+
+    <section class="feature-section section-wrap" id="features">
+      <div class="feature-panel">
+        <div class="feature-copy"><div class="eyebrow">BIR PLATFORMA. CHEKSIZ IMKONIYAT.</div><h2>O‘YINNI TANLA.<br><span class="gold">CHEGARANI BUZ.</span></h2><p>Golden Arena — o‘yinlar olamidagi yangi manziling. Sevimli janringni tanla va o‘z gaming tajribangni yarat.</p><a class="btn btn-gold" href="#games">Kashf qilish <span>↗</span></a></div>
+        <div class="feature-visual"><div class="feature-cube"><span>G</span></div><div class="feature-orbit"></div><div class="feature-chip">GAMING<br>REDEFINED</div></div>
+      </div>
+    </section>
+
+    <section class="community section-wrap" id="community">
+      <div class="community-icon">✦</div><div><div class="eyebrow">JAMOAGA QO‘SHIL</div><h2>O‘YINCHILAR BILAN <span class="gold">BIRGA.</span></h2><p>Yangiliklar va yangi o‘yinlar haqida birinchilardan bo‘lib xabardor bo‘l.</p></div>
+      <form class="subscribe-form" id="subscribeForm"><input type="email" id="emailInput" placeholder="Email manziling" required><button class="btn btn-gold" type="submit">Obuna bo‘lish ↗</button></form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">G</span><span>GOLDEN<span class="gold"> ARENA</span></span></a><p>© 2026 GOLDEN ARENA. Barcha huquqlar himoyalangan.</p><a href="#home" class="back-top">YUQORIGA ↑</a></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Yopish">×</button>
+      <div class="eyebrow" id="modalEyebrow">GOLDEN ARENA</div><h2 id="modalTitle">Xush kelibsiz</h2><p id="modalText">Gaming olamiga xush kelibsiz.</p>
+      <div class="modal-actions"><button class="btn btn-gold" id="modalPrimary">Davom etish ↗</button><button class="btn btn-outline" id="modalSecondary">Yopish</button></div>
     </div>
-    <div class="today" aria-label="Bugungi darslar">
-      <h3>Bugungi darslar</h3>
-      <ul>
-        <li><time>09:00</time><span>Ingliz tili · B1</span><i>12 oʻrin</i></li>
-        <li><time>11:00</time><span>Python · boshlangʻich</span><i>5 oʻrin</i></li>
-        <li><time>14:00</time><span>IELTS · Writing</span><i>3 oʻrin</i></li>
-        <li><time>17:30</time><span>Matematika · abituriyent</span><i>8 oʻrin</i></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="stats">
-    <div><b data-n="1200">0</b><span>bitiruvchi</span></div>
-    <div><b data-n="15">0</b><span>tajribali ustoz</span></div>
-    <div><b data-n="8">0</b><span>yoʻnalish</span></div>
-    <div><b data-n="12">0</b><span>nafargacha guruh</span></div>
-  </section>
-
-  <section id="courses">
-    <h2>Kurslar</h2>
-    <div class="bar" id="chips"></div>
-    <div class="grid" id="grid"></div>
-  </section>
-
-  <section id="teachers">
-    <h2>Ustozlar</h2>
-    <div class="grid t" id="tgrid"></div>
-  </section>
-
-  <section id="join" class="join">
-    <div>
-      <h2>Bepul sinov darsiga yoziling</h2>
-      <p>Raqamingizni qoldiring, administrator 1 soat ichida qoʻngʻiroq qilib, qulay vaqtni kelishadi.</p>
-    </div>
-    <form id="f" novalidate>
-      <label>Ismingiz<input id="nm" type="text" autocomplete="name" placeholder="Masalan, Aziza"></label>
-      <label>Telefon<input id="ph" type="tel" autocomplete="tel" placeholder="+998 90 123 45 67"></label>
-      <label>Kurs<select id="cs"></select></label>
-      <button class="btn" type="submit">Yozilish</button>
-      <div id="fm" role="status"></div>
-    </form>
-  </section>
-
-  <section id="faq">
-    <h2>Koʻp beriladigan savollar</h2>
-    <details><summary>Birinchi dars rostdan ham bepulmi?</summary><p>Ha. Sinov darsiga kelib, ustoz va guruhni koʻrasiz. Yoqmasa, hech narsa toʻlamaysiz.</p></details>
-    <details><summary>Guruhda nechta oʻquvchi boʻladi?</summary><p>Eng koʻpi bilan 12 nafar, shunda ustoz har biringizga vaqt ajrata oladi.</p></details>
-    <details><summary>Toʻlovni boʻlib toʻlasa boʻladimi?</summary><p>Ha, har oy boshida toʻlanadi. Ikki yoʻnalishga birga yozilsangiz, 10% chegirma beramiz.</p></details>
-  </section>
-
-  <footer>
-    <div>Bilim oʻquv markazi, Toshkent shahri</div>
-    <div>+998 90 000 00 00 · Du–Sha 9:00–20:00</div>
-  </footer>
-</div>
-<script src="script.js"></script>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
 </body>
 </html>
